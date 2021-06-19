@@ -38,12 +38,87 @@
 <hr/>
 <h1>快來看看全新的MIPS模擬器!</h1>
 
+
 <img src="mipsEmulator/mainScreen.png" height="400" border="5">
 <br>
-
-
+<br>
+<h2>專案介紹</h2>
+&nbsp; 
+&nbsp;
+&nbsp;
+&nbsp;
+我們專案的目標是要製造出一個模擬32位元MIPS指令的模擬器，並實現先前可以執行MIPS指令的模擬器沒有做出的功能，即圖示化的Pipeline Datapath。
+<h2>GUI介紹</h2>
+<img src="mipsEmulator/newButtonNormal.png" height="45" border="0">
+建立新的檔案   
+&nbsp; 
+&nbsp; 
 </body>
-
+<img src="mipsEmulator/runButtonNormal.png" height="45" border="0">
+一次執行到底
+<br>
+<img src="mipsEmulator/openButtonNormal.png" height="45" border="0">
+開啟舊檔
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp;   
+<img src="mipsEmulator/stepButtonNormal.png" height="45" border="0">
+一行行執行
+<br>
+<img src="mipsEmulator/saveButtonNormal.png" height="45" border="0">
+儲存檔案
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp;
+<img src="mipsEmulator/informationNormal.png" height="45" border="0">
+關於mipsEmulator資訊
+<br>
+<img src="mipsEmulator/assembleButtonNormal.png" height="45" border="0">
+程式的組譯
+&nbsp; 
+&nbsp;   
+&nbsp;
+&nbsp;  
+<img src="mipsEmulator/settingButtonNormal.png" height="45" border="0">
+可設定畫質、檢查更新
+<br>
+<br>  
+<h3>記憶體搜尋區塊</h3>
+<img src="mipsEmulator/locationSearchEngine.png" height="250" border="0">
+<br>  
+<br>
+&nbsp; 
+&nbsp;   
+&nbsp;
+&nbsp;
+我們可以透過這個區域得知輸入值記憶體的資訊（MEM）或者是以字組（WORD，MIPS一個WORD等於四個Bytes）
+<br>
+<h3>暫存器（Register）的資訊</h3>
+<img src="mipsEmulator/register.png" height="350" border="0">
+<br>
+<h3>Pipeline Datapath</h3>
+<img src="mipsEmulator/pipelineDatapath.png" height="300" border="0">
+<br>  
+<br>
+&nbsp; 
+&nbsp;   
+&nbsp;
+&nbsp;
+這裡會顯示pipeline的執行過程，並會顯示危障及前饋的狀況。
+<br>
+<h2>支援的指令</h2>
+    <h3>R-type指令：</h3>
+    ADD、SUB、AND、OR、NOR、SLT、SLL、SRL
+    <h3>I-type指令：</h3>
+    ADDI、LW、SW、ANDI、ORI、BEQ、BNE、SLTI
+    <h3>J-type指令：</h3>
+    J
 <script>
 
 
