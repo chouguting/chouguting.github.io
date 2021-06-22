@@ -10,6 +10,38 @@
 </head>
 
 <style>
+    a{
+        font-size: 38px;
+    }
+    word{
+        font-size: 30px;
+        font-weight: bold;
+        display: inline;
+    }
+    word1{
+        font-size: 24px;
+        color:palevioletred;
+        font-weight: bold;
+        display: inline;
+    }
+    word2{
+        font-size: 20px;
+        color:mediumseagreen;
+        font-weight: bold;
+        display: inline;
+    }
+    word3{
+        font-size: 18px;
+        color:dodgerblue;
+        font-weight: bold;
+        display: inline;
+    }
+    word4{
+        font-size: 18px;
+        color:rosybrown;
+        font-weight: bold;
+        display: inline;
+    }
     font
     {
         font-size: 30px;
@@ -36,29 +68,42 @@
 
 <br/>
 <hr/>
-<h1>快來看看全新的MIPS模擬器!</h1>
+<word style="color:rgb(119, 136, 153);">快來看看全新的MIPS模擬器!</word>
+&nbsp; 
+&nbsp;
+&nbsp;
+&nbsp; 
+&nbsp;
+&nbsp;
+<a href="https://github.com/chouguting/mipsEmulator/releases" style="color: goldenrod" > 點我下載 </a>
 
+<br>    
 
 <img src="mipsEmulator/mainScreen.png" height="400" border="5">
 <br>
 <br>
-<h2>專案介紹</h2>
+
+<word1>專案介紹</word1>
+<br>
 &nbsp; 
-&nbsp;
 &nbsp;
 &nbsp;
 我們專案的目標是要製造出一個模擬32位元MIPS指令的模擬器，並實現先前可以執行MIPS指令的模擬器沒有做出的功能，即圖示化的Pipeline Datapath。
-<h2>GUI介紹</h2>
+<br>
+<br>
+<word1>GUI介紹</word1>
+<br>
 <img src="mipsEmulator/newButtonNormal.png" height="45" border="0">
-建立新的檔案   
+<word4>建立新的檔案</word4>
+   
 &nbsp; 
 &nbsp; 
-</body>
+
 <img src="mipsEmulator/runButtonNormal.png" height="45" border="0">
-一次執行到底
+<word4>一次執行到底</word4>
 <br>
 <img src="mipsEmulator/openButtonNormal.png" height="45" border="0">
-開啟舊檔
+<word4>開啟舊檔</word4>
 &nbsp; 
 &nbsp; 
 &nbsp; 
@@ -66,10 +111,10 @@
 &nbsp; 
 &nbsp;   
 <img src="mipsEmulator/stepButtonNormal.png" height="45" border="0">
-一行行執行
+<word4>一行行執行</word4>
 <br>
 <img src="mipsEmulator/saveButtonNormal.png" height="45" border="0">
-儲存檔案
+<word4>儲存檔案</word4>
 &nbsp; 
 &nbsp; 
 &nbsp; 
@@ -77,19 +122,21 @@
 &nbsp; 
 &nbsp;
 <img src="mipsEmulator/informationNormal.png" height="45" border="0">
-關於mipsEmulator資訊
+<word4>關於mipsEmulator資訊</word4>
 <br>
 <img src="mipsEmulator/assembleButtonNormal.png" height="45" border="0">
-程式的組譯
+<word4>程式的組譯</word4>
 &nbsp; 
 &nbsp;   
 &nbsp;
 &nbsp;  
 <img src="mipsEmulator/settingButtonNormal.png" height="45" border="0">
-可設定畫質、檢查更新
+
+<word4>可設定畫質、檢查更新</word4>
 <br>
-<br>  
-<h3>記憶體搜尋區塊</h3>
+<br>
+<word3>記憶體搜尋區塊</word3>
+<br>
 <img src="mipsEmulator/locationSearchEngine.png" height="250" border="0">
 <br>  
 <br>
@@ -99,10 +146,14 @@
 &nbsp;
 我們可以透過這個區域得知輸入值記憶體的資訊（MEM）或者是以字組（WORD，MIPS一個WORD等於四個Bytes）
 <br>
-<h3>暫存器（Register）的資訊</h3>
+<br>
+<word3>暫存器（Register）的資訊</word3>
+<br>
 <img src="mipsEmulator/register.png" height="350" border="0">
 <br>
-<h3>Pipeline Datapath</h3>
+<br>
+<word3>Pipeline Datapath</word3>
+<br>
 <img src="mipsEmulator/pipelineDatapath.png" height="300" border="0">
 <br>  
 <br>
@@ -110,15 +161,26 @@
 &nbsp;   
 &nbsp;
 &nbsp;
-這裡會顯示pipeline的執行過程，並會顯示危障及前饋的狀況。
+這裡會顯示管道化（Pipeline）的執行過程，並會顯示危障（Hazard）及前饋（Forwarding）的狀況。
 <br>
-<h2>支援的指令</h2>
-    <h3>R-type指令：</h3>
+<br>
+<word1>支援的指令</word1>
+<br>
+    <br>
+    <word2>R-type指令：</word2>
+    <br>
     ADD、SUB、AND、OR、NOR、SLT、SLL、SRL
-    <h3>I-type指令：</h3>
+    <br>
+    <br>
+    <word2>I-type指令：</word2>
+    <br>
     ADDI、LW、SW、ANDI、ORI、BEQ、BNE、SLTI
-    <h3>J-type指令：</h3>
+    <br>
+    <br>
+    <word2>J-type指令：</word2>
+    <br>
     J
+    </body>
 <script>
 
 
