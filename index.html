@@ -4,24 +4,16 @@
 	<head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>
+        <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="app.css">
+        <title>
 			周固廷的網站?
 		</title>
 	</head>
-	
+
 	<style>
-		font
-		{
-			font-size: 30px;
-			font-weight: bold;
-			color: blue;
-		}
-		.font
-		{
-			font-size: 30px;
-			font-weight: bold;
-			color: cornflowerblue;
-		}
+
 		/*#FONT
 		{
 			font-size: 30px;
@@ -29,11 +21,30 @@
 			color: green;
 		}*/
 	</style>
-	
+
+
+
 	<body>
-		<p1 class="font" id="FONT">周固廷</p1>
-		<font class="font">&nbsp;&nbsp;CHOU,KU-TING</font>
-        </br>
+    <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
+                <span class="mdc-top-app-bar__title">周固廷&nbsp;&nbsp;CHOU,KU-TING</span>
+            </section>
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+                <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite">favorite</button>
+                <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Options">more_vert</button>
+            </section>
+        </div>
+    </header>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <br/>
+    </br>
+
     <a href="https://play.google.com/store/apps/details?id=com.chouguting.donateGordon&hl=en_AU"><img src="gordonPortrait.jpeg" width="150px" height="150px" ></a>
         </br>
         <a href="https://play.google.com/store/apps/details?id=com.chouguting.donateGordon&hl=en_AU">下載固廷APP</a>
@@ -41,8 +52,13 @@
         <a href="https://www.youtube.com/channel/UCX_yYwJBUkpUvkjKBXQh0QQ">訂閱固廷Youtube</a>
         </br>
         <a href="www.google.com">林雅芸</a>
+
+
         </br>
-        </br>
+        <button class="testBtn mdc-button">
+            <span class="mdc-button__ripple"></span>
+            <span class="mdc-button__label">Text Button</span>
+        </button>
 
 
         <h3>
@@ -73,7 +89,10 @@
                 <th>chouguting@gmail.com</th>
                 <th>0227567231</th>
             </tr>
+
         </table>
+
+
         <!--
         </br>
         <button onclick="changeColor()">Change font style</button>
@@ -97,10 +116,10 @@
                 Your browser does not support the audio element.
          </audio>
          -->
+
 	</body>
-	
+    <script src="app.js"></script>
 	<script>
-		console.log("Hello World!!!!!!!");
         
         var flag=0;
         var flashing;
@@ -145,4 +164,10 @@
         
         
 	</script>
+    <!-- Required Material Web JavaScript library -->
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <!-- Instantiate single textfield component rendered in the document -->
+    <script>
+        mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
+    </script>
 </html>

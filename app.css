@@ -1,0 +1,19 @@
+
+font
+{
+  font-size: 30px;
+  font-weight: bold;
+  color: blue;
+}
+.font
+{
+  font-size: 30px;
+  font-weight: bold;
+  color: cornflowerblue;
+}
+
+.mdc-top-app-bar{
+  margin: 0;
+  background: cornflowerblue;
+}
+body {margin:0;padding:0}
